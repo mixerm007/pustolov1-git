@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+.home1{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../slike/sarPlanina.jpg);
+  box-shadow:3px 1px 4px 3px rgb(168, 168, 168);
+  height: 100vh;
+  
+}    
+
+body::-webkit-scrollbar{
+    width: 0.35rem;
+    background: black;
+}
+
+body::-webkit-scrollbar-track{
+    background: white;
+}
+body::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(22, 22, 22, 0.8);
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid white;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.logo{
+    color: white;
+    padding-left: 3em;
+    
+
+}
+
+.nav-linkovi{
+    display: flex;
+    width: 35em;
+    justify-content: space-around;
+    color: white;
+    margin-right: 3.5em;
+
+}
+
+.nav-linkovi a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-linkovi li{
+    list-style: none;
+}
+.nav-linkovi a:hover{
+    color: rgb(156, 156, 156);
+}
+
+.meni{
+    display: none;
+}
+.meni div{
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 5px;
+}
+
+.naslov{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40vh;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.58);
+}
+.naslov h1{
+    font-size: 120px;
+}
+.naslov h2{
+    font-size: 200%;
+}
+
+.podaci{
+    display: flex;
+    margin-top: 45px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.podaci p{
+    background-color: rgba(22, 22, 22, 0.6);
+    color: white;
+    width: 200px;
+    margin: 4px 2px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform .2s;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.podaci p:hover {
+    transform: scale(1.2); 
+}
+
+.home2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;background-image: url(../slike/rtanj1.jpeg);
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.58);
+    box-shadow: 13px 10px 30px -5px rgba(0,0,0,0.72);
+}
+.btn-1{
+    padding: 10px;
+    border-radius: 2px;
+    margin: 20px;
+    background-color:rgba(238, 238, 238, 0.2);
+    color: white;
+    border: 2px solid white;
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.btn{
+    text-align: center;
+    padding-top: 9em;
+}
+
+.btn-1:hover {
+    background-color:rgb(247, 247, 247, 0.4);
+    color: white;
+    border-radius: 6px;
+}
+.pitanja{
+    text-align: center;
+    padding-top: 13vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    height: 8em;
+    margin-top: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top: 1px solid rgb(218, 218, 218);
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1.5px solid rgb(255, 207, 207);
+  }
+  
+  .donjiFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+  }
+  .donjiFooter h3{
+      color: black;
+      font-size: 13px;
+      border-top: 1px solid rgb(255, 207, 207);
+      padding-top: 4px;
+      padding-bottom: 4px;
+  }
+  .footer-conent{
+      position: relative;
+      margin: auto;
+      justify-content: center;
+      width: 95%;
+      padding: 30px 10px;
+      box-sizing: border-box;
+  }
+  .mapa{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    /* margin-left: 5px; */
+    justify-content: start;
+}
+.mapa2{
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    font-size: 18px;
+    /* font-size: 18px; */
+    /* margin-left: 5px; */
+    justify-content: center;
+    text-align: end;
+}
+.logoF{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 233, 230);
+    padding-top: 35px;
+}
+
+.mapa a, .mapa2 a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+.mapa a:hover, .mapa2 a:hover{
+    color: rgb(179, 179, 179);
+}
+.mapa li, .mapa2 li{
+    list-style: none;
+    justify-content: start;
+}
+    
+@media screen and (max-width:1024px){
+    .nav-linkovi{
+        width: 60%;
+    
+    }
+}
+
+@media screen and (max-width:768px){
+    .nav-linkovi{
+        display: none;
+        position: absolute;
+        right: 0%;
+        height: 30vh;
+        top: 8vh;
+        background-color: rgba(17, 17, 17, 0.9);
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-right: 0%;
+        border-bottom: 1px solid white;
+    }
+    .nav-linkovi li{
+        text-align: center;
+    }
+    .meni{
+        display: block;
+        cursor: pointer;
+        margin-right: 1em;
+    }
+    .nav-linkovi.active {
+        display: flex;
+    }
+    .podaci p:hover{
+        transform: none;
+    }
+    .btn{
+        text-align: center;
+        padding-top: 6em;
+    }
+    .podaci p{
+        width: 160px;
+        margin: 4px 10px;
+    
+    }
+} 

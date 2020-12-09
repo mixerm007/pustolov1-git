@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+}    
+.home1{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../slike/dunav\ beljarice.jpg);
+    height: 100vh;
+    box-shadow: 0px 1px 4px 3px #ccc;
+    
+  } 
+
+
+body::-webkit-scrollbar{
+    width: 0.35rem;
+    background: black;
+}
+
+body::-webkit-scrollbar-track{
+    background: white;
+}
+body::-webkit-scrollbar-thumb{
+    background: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(22, 22, 22, 0.8);
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid white;
+    position: fixed;
+    width: 100%;
+    z-index: +100;
+}
+
+
+
+.logo{
+    color: white;
+    padding-left: 3em;
+}
+
+.nav-linkovi{
+    display: flex;
+    width: 35em;
+    justify-content: space-around;
+    color: white;
+    margin-right: 3.5em;
+}
+
+.nav-linkovi a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-linkovi li{
+    list-style: none;
+}
+.nav-linkovi a:hover{
+    color: rgb(156, 156, 156);
+}
+
+.meni{
+    display: none;
+}
+.meni div{
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* http://www.serbia.com/srpski/kao-iz-bajke-10-fascinantnih-mesta-u-srbiji/
+https://www.slikesrbije.rs/rang-lista-prvi-krug#photos/2000 */
+.formaP{
+    position: absolute;
+    top: 50vh;
+    margin: auto;
+    width: 100%;
+}
+
+.forma{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+  box-shadow:0px 1px 4px 0px #ccc;
+  box-sizing: border-box;
+  width:auto;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  margin-right: 170px;
+  margin-left: 170px;
+  opacity: 0.92;
+}
+.input_holder input, textarea, select
+{
+     width:85%;
+     margin:20px 0;
+     border:solid 1px #ccc;
+     border-width:0px 0px 1px;
+     transition:linear .15s;
+     font-size:16px;
+     font-family:arial;
+     padding-bottom:5px;
+     font-family: 'Montserrat', sans-serif;
+}
+.input_holder .form 
+{
+  color:#6600cc;
+  margin-right:10px;
+}
+.input_holder input:focus
+{
+  padding-left:20px;
+}
+.submit_button
+{
+  border-radius:32x;
+  padding:10px 15px;
+  border:solid 0px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background:#e68341;
+  color:#fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease 0s;
+}
+.submit_button:hover{
+    color: white;
+    background: #ffa012;
+}
+.checkbox{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+.pitanja{
+    /* position: relative;
+    top: 100px;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20vh;
+    color: white;
+}
+.naslovPitanja :nth-child(1){
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.58);
+    font-size: 60px;
+}
+.naslovPitanja :nth-child(2){
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.58);
+    font-size: 30px;
+}
+
+.pravougaonik{
+    width: 100%;
+    margin: auto;
+    background-color: #e68341;
+    height: 420px;
+    margin-top: 40px;
+    border-top: 1px solid rgb(177, 177, 177);
+    box-shadow: 0px 1px 4px 3px #ccc;
+    /* border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px; */
+}
+
+.pratiteNas{
+    text-align: center;
+    margin: auto;
+    padding-top: 12em;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 5px 2px 5px rgba(0,0,0,0.58);
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    height: 8em;
+    margin-top: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top: 1px solid rgb(218, 218, 218);
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1.5px solid rgb(255, 207, 207);
+  }
+  
+  .donjiFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+  }
+  .donjiFooter h3{
+      color: black;
+      font-size: 13px;
+      border-top: 1px solid rgb(255, 207, 207);
+      padding-top: 4px;
+      padding-bottom: 4px;
+  }
+  .footer-conent{
+      position: relative;
+      margin: auto;
+      justify-content: center;
+      width: 95%;
+      padding: 30px 10px;
+      box-sizing: border-box;
+  }
+  .mapa{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    /* margin-left: 5px; */
+    justify-content: start;
+}
+.mapa2{
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    font-size: 18px;
+    /* font-size: 18px; */
+    /* margin-left: 5px; */
+    justify-content: center;
+    text-align: end;
+}
+.logoF{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 233, 230);
+    padding-top: 35px;
+}
+
+.mapa a, .mapa2 a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+.mapa a:hover, .mapa2 a:hover{
+    color: rgb(179, 179, 179);
+}
+.mapa li, .mapa2 li{
+    list-style: none;
+    justify-content: start;
+}
+.ikonice{
+    /* width: auto;
+    height: 50px; */
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    text-align: center;
+    
+}
+.fb, .yt, .tw, .in{
+    width: 40px;
+    height: 38px;
+    /* padding-left:30px;
+    padding-right: 30px; */
+    cursor: pointer;
+    line-height: 50px;
+    margin: 0 15px;
+}
+
+
+/* padding: 10px;
+    border-radius: 2px;
+    margin: 20px;
+    background-color:rgba(238, 238, 238, 0.2);
+    color: white;
+    border: 2px solid white;
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.4s;
+    font-family: 'Montserrat', sans-serif; */
+
+    @media screen and (max-width:1024px){
+        .nav-linkovi{
+            width: 60%;
+        
+        }
+    }
+    
+    @media screen and (max-width:768px){
+        .nav-linkovi{
+            display: none;
+            position: absolute;
+            right: 0%;
+            height: 30vh;
+            top: 8vh;
+            background-color: rgba(17, 17, 17, 0.9);
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-right: 0%;
+            border-bottom: 1px solid white;
+        }
+        .nav-linkovi li{
+            text-align: center;
+        }
+        .meni{
+            display: block;
+            cursor: pointer;
+            margin-right: 1em;
+        }
+        .nav-linkovi.active {
+            display: flex;
+        }
+        .forma{
+            width: auto;
+            margin-left: 40px;
+            margin-right: 40px;
+            top: 10vh;
+        }
+        .pratiteNas{
+            padding-top: 15em;
+        }
+        .pitanja{
+            padding-top: 15vh;
+        }
+        .pravougaonik{
+            height: 500px;
+        }
+    
+    } 
